@@ -18,3 +18,6 @@ Execute launch files on Master Node (Robot) as indicated in README.md of DiffWhe
 Open Terminal and type:
 
 roslaunch lighteleop starteleop.launch
+
+
+To be implemented: abstraction of the joy input.
