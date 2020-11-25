@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <node name="joy_input" pkg="joy" type="joy_node" args=''>
+        <param name="autorepeat_rate" value="100.0" />
+    </node>
+</launch>
+
+
