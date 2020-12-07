@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <launch>
-    <node name="joy_input" pkg="joy" type="joy_node" args=''>
+    <node name="joy_input"  pkg="joy"   type="joy_node"     args=''>
         <param name="autorepeat_rate" value="100.0" />
     </node>
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find lighteleop)/rviz/my_config_file.rviz" />
 </launch>
 
 
