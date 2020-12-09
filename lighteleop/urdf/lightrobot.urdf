@@ -1,0 +1,15 @@
+<robot name="platform">
+  <link name="base_link">
+    <visual>
+      <origin rpy="0 0 -1.57" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lighteleop/urdf/meshes/covid_light.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.78216 0.80961 0.91333 1" />
+      </material>
+    </visual>
+  </link>
+</robot>

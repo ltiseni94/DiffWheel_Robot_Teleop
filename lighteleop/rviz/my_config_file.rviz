@@ -7,6 +7,8 @@ Panels:
         - /Global Options1
         - /Status1
         - /Image1
+        - /RobotModel1
+        - /RobotModel1/Status1
       Splitter Ratio: 0.5
     Tree Height: 288
   - Class: rviz/Selection
@@ -27,7 +29,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: LaserScan
+    SyncSource: ""
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -58,22 +60,13 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        base_link:
-          Value: true
-        lidar_link:
-          Value: true
-        map:
-          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        map:
-          base_link:
-            lidar_link:
-              {}
+        {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -118,6 +111,27 @@ Visualization Manager:
       Transport Hint: compressed
       Unreliable: false
       Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled:
+          {}
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
